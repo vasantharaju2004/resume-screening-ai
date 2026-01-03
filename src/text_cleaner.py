@@ -18,4 +18,4 @@ def clean_txt(text):
     stop_words = set(stopwords.words('english'))
     text = ' '.join(word for word in text.split() if word not in stop_words)
 
-    return text
+    return   
