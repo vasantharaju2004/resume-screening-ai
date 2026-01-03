@@ -1,4 +1,17 @@
-venv/
+# Python
 __pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+
+# Database
 *.db
+
+# Environment variables
 .env
+
+# OS
+.DS_Store
+
+
