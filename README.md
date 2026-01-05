@@ -103,14 +103,3 @@ git clone https://github.com/vasantharaju2004/resume-screening-ai.git
 cd resume-screening-ai
 pip install -r requirements.txt
 streamlit run app.py
-
-
-
----
-
-
-
-
-
-
-
