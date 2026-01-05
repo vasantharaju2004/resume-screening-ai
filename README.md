@@ -46,17 +46,18 @@ Final Score → Ranking → Recruiter View
 
 ## 📂 Project Structure
 
+
 resume-screening-ai/
-│
-├── app.py # Streamlit app
-├── requirements.txt # Dependencies
-├── .gitignore
+├── app.py                  # Streamlit application entry point
+├── requirements.txt        # Python dependencies
+├── .gitignore              # Git ignore rules
 │
 ├── src/
-│ ├── resume_parser.py # PDF text extraction
-│ ├── skill_extractor.py # Skill matching logic
-│ ├── matcher.py # Scoring & ranking
-│ └── database.py # SQLite operations
+│   ├── resume_parser.py    # PDF → text extraction logic
+│   ├── skill_extractor.py  # Skill taxonomy & matching
+│   ├── matcher.py          # Resume–JD scoring and ranking
+│   └── database.py         # SQLite database operations
+
 
 
 
@@ -67,4 +68,21 @@ git clone https://github.com/vasantharaju2004/resume-screening-ai.git
 cd resume-screening-ai
 pip install -r requirements.txt
 streamlit run app.py
+
+
+---
+
+## 🔹 Small but Powerful Improvements (Optional)
+
+### ✅ Add badges (top of README)
+```md
+![Python](https://img.shields.io/badge/Python-3.12-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-red)
+![Status](https://img.shields.io/badge/Status-Active-success)
+
+
+## 📸 Screenshots
+![App UI](assets/screenshots/s1.png)
+![App UI](assets/screenshots/s2.png)
+![App UI](assets/screenshots/s3.png)
 
