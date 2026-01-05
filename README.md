@@ -59,19 +59,6 @@ resume-screening-ai/
 │   └── database.py         # SQLite database operations
 
 
-
-
-## ▶️ Run Locally
-
-```bash
-git clone https://github.com/vasantharaju2004/resume-screening-ai.git
-cd resume-screening-ai
-pip install -r requirements.txt
-streamlit run app.py
-
-
----
-
 ## 🔹 Small but Powerful Improvements (Optional)
 
 ### ✅ Add badges (top of README)
@@ -85,4 +72,17 @@ streamlit run app.py
 ![App UI](assets/screenshots/s1.png)
 ![App UI](assets/screenshots/s2.png)
 ![App UI](assets/screenshots/s3.png)
+
+
+
+## ▶️ Run Locally
+
+```bash
+git clone https://github.com/vasantharaju2004/resume-screening-ai.git
+cd resume-screening-ai
+pip install -r requirements.txt
+streamlit run app.py
+
+
+
 
