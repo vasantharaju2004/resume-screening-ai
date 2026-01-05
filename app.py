@@ -110,30 +110,30 @@ if st.button("🚀 Analyze Resumes", key="analyze_main"):
 # database connections to streamlit
 
 
-create_tables()
+# create_tables()
 
-job_id = insert_job(jd_text)
+# job_id = insert_job(jd_text)
 
 
-resume_texts = []
-candidate_ids = []
+# resume_texts = []
+# candidate_ids = []
 
-for file in uploaded_files:
-    text = extract_text_from_pdf(file)
-    if text.strip():
-        resume_texts.append(text)
-        cid = insert_candidate(text)
-        candidate_ids.append(cid)
-results = rank_resumes(resume_texts, jd_text)
+# for file in uploaded_files:
+#     text = extract_text_from_pdf(file)
+#     if text.strip():
+#         resume_texts.append(text)
+#         cid = insert_candidate(text)
+#         candidate_ids.append(cid)
+# results = rank_resumes(resume_texts, jd_text)
 
-for r, cid in zip(results, candidate_ids):
-    insert_result(
-        job_id,
-        cid,
-        r["final_score"],
-        r["skill_score"],
-        r["text_score"]
-    )
+# for r, cid in zip(results, candidate_ids):
+#     insert_result(
+#         job_id,
+#         cid,
+#         r["final_score"],
+#         r["skill_score"],
+#         r["text_score"]
+#     )
 
 
 
